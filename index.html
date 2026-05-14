@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sederhana - Panjirahmadani</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Panjirahmadani</div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Beranda</a>
+                <a href="#about" class="nav-link">Tentang</a>
+                <a href="#services" class="nav-link">Layanan</a>
+                <a href="#contact" class="nav-link">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Selamat Datang!</h1>
+            <p class="hero-subtitle">Website sederhana dengan HTML, CSS, dan JavaScript</p>
+            <button class="btn btn-primary" onclick="scrollToSection('about')">Pelajari Lebih Lanjut</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Tentang Website Ini</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">💻</div>
+                    <h3>Modern Design</h3>
+                    <p>Desain yang modern dan menarik dengan teknologi terkini</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">📱</div>
+                    <h3>Responsive</h3>
+                    <p>Bekerja sempurna di semua ukuran layar dan device</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Cepat</h3>
+                    <p>Loading cepat tanpa library eksternal yang berat</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🎨</div>
+                    <h3>Indah</h3>
+                    <p>Animasi smooth dan efek visual yang menarik</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Layanan Kami</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Web Design</h3>
+                    <p>Kami membuat desain website yang menarik dan user-friendly untuk bisnis Anda.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Development</h3>
+                    <p>Mengembangkan website dengan teknologi terbaru dan best practices industri.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Optimization</h3>
+                    <p>Optimasi performa dan SEO untuk meningkatkan ranking di search engine.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Support</h3>
+                    <p>Tim support siap membantu pemeliharaan dan pengembangan website Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <input type="text" placeholder="Nama Anda" required class="form-input">
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email Anda" required class="form-input">
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Pesan Anda" rows="5" required class="form-input"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+            </form>
+            <div id="form-message" class="form-message"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Website Sederhana - Dibuat oleh Panjirahmadani</p>
+            <div class="social-links">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
